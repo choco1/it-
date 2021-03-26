@@ -3,10 +3,10 @@
 {% block body %}
     {% for job in jobs %}
         <h2>{{ job.title }}</h2>
-        <p>{{ job.discription }}</p>
+        <p>{{ job.description }}</p>
 
-        <a href="{{ path ('single_job', {'id': job.id}) }}"></a>
+        <a href="{{ path ('single_job', {'id': job.id}) }}">VOIR L'annonce </a>
 
-        <a href="{{ path('delete_job', {'id': job.id}) }}"></a>
+        <a href="{{ path('delete_job', {'id': job.id}) }}">SUPPRIMER</a>
     {% endfor %}
 {% endblock %}
